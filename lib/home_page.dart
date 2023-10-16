@@ -99,7 +99,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add Items'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.search), // Replace this with your desired icon
+            onPressed: () {
+              // Implement the action you want to perform when the icon is pressed
+            },
+          ),
+        ],
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
